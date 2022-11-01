@@ -26,7 +26,7 @@ const parseCollection = async (page) => {
       const id = item.id.split("_")[1];
       let title, author;
       try {
-        title = item.children[2].children[0].text.trim();
+        title = item.children[1].children[0].text.trim();
       } catch (e) {
         title = "UNKNOWN_COLLECTION_ITEM_TITLE";
       }
